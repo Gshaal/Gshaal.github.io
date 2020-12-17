@@ -68,7 +68,7 @@ var data = [{
         roomType: "Twin Room",
         src:"https://uploads-ssl.webflow.com/5c0696a753197069ba71de81/5c1bcf4194fc8dc6ef568345_twin-3-rooms-home-Barr-na-Sraide.jpg",
         beds:2,
-        price: 180,
+        price: 190,
         bathroom: true,
         wifi: false,
         tv: false

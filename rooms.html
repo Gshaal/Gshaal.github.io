@@ -34,8 +34,8 @@
             <span class="navbar-toggler-icon "></span>
         </button>
 
-        <a class="navbar-brand" href="#">
-            <img src="images/cover3.png" width="200" height="60" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand" href="./index.html">
+            <img src="images/logo1_white.png" width="100" height="70" class="d-inline-block align-top" alt="">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,23 +47,23 @@
                     <a class="nav-link" href="./rooms.html">Rooms </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="./aboutUs.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
 
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-info btn-lg" type="submit">Book</button>
-            </form> -->
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-info btn-lg" type="submit" id="bookbutton">Book</button>
+            </form>
         </div>
     </nav>
     <br />
     <div class="row">
         <div class="col-lg-3">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="background-color: #076666; color: white;">
                     Beds
                 </div>
                 <div class="card-body">
@@ -81,8 +81,9 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="background-color: #076666; color: white;">
                     Faclities
                 </div>
                 <div class="card-body">
@@ -99,8 +100,11 @@
                         </label>
                     </div>
                 </div>
+
             </div>
         </div>
+        <br />
+        <br />
         <div class="col-lg-9">
             <div class="row" id="room-container">
                 loading...
@@ -111,7 +115,86 @@
     </div>
     </div>
 
+    <div class="footer navbar-fixed-bottom ">
+        <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="logoBottom my-auto">
+                        <a href="index.html">
+                            <img src="images/logo1_white.png" width="100" height="70"
+                            alt="photo of reception desk in The Morgan Guesthouse">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center footerText2">
+                    <p>
+                    <ul class="footerLinks">
+                        <li>
+                            <a class="footerLink" href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                            <a class="footerLink" href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="footerLink" href="rooms.html">Book Now</a>
+                        </li>
+                        <li>
+                            <a class="footerLink" href="aboutUs.html">About Us</a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-4 footerText3">
+                    <p id="footAddress"> The Morgan </br> Mayor Street Lower, </br> IFSC </br> Dublin 1 </br> 087 000
+                        0000</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:</div>
+    </div>
 
+    <div class="modal" tabindex="-1" role="dialog" id="booking-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Making a Reservation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="email" class="form-control" id="name" aria-describedby="emailHelp"
+                                        placeholder="Enter Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="numer-rooms">Number of rooms</label>
+                                    <input type="number" class="form-control" id="numer-rooms">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row" id="selected-room">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="make-booking">Confirm</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="./js/room.js"></script>
